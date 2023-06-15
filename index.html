@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" id="container">
+
+
+        <nav>
+
+
+            <div>
+
+                <img src="data:image/png;base64,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" alt="no image" class="logo">
+
+            </div>
+
+
+
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#order">ORDER</a></li>
+                <li><a href="#icon">C0NTACT US</a></li>
+
+
+            </ul>
+
+
+        </nav>
+
+        <section id="about">
+
+            <div class="heading">
+
+                <h2> Get Fresh Food</h2>
+                <span> In a Easy Way</span>
+            </div>
+
+            <div class="aboutcontent">
+
+                <div class="abouting">
+
+                    <img src="./images/2222.jpg"
+                        alt="no image">
+                </div>
+
+                <!-- abut text cntent -->
+
+                <div class="abouttext">
+
+                  
+
+
+
+
+                </div>
+            </div>
+        </section>    
+    </div>
+
+
+
+
+
+    <section id="menu">
+        <h1 style="text-align: center;" style="font-weight: bolder;">MENU</h1>
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMAGES/pza.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CHEESE PIZZA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 250$</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/br.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BURGER</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 270$</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/fr.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FRENCH FRIES</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 80$</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMAGES/sanw.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SANWICH</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 180$</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMAGES/brst.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BROAST</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 600$</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/psta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PASTA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 350$</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMAGES/shawa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SHAWAI CHICKEN</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary"> BUY 500$</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMAGES/shw.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SHAWARMA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">BUY 200$</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section id="order">
+
+        <div class="headingss">
+
+            <h2>Pick your Order</h2>
+            <span> In a Easy Way</span>
+        </div>
+
+        <div class="ordercontent">
+
+            <div class="ordering">
+
+                <img src="./IMAGES/restaurant-offers-design-template-9755c79fd6cd3510238e2c246f09b430_screen.jpg"
+                    alt="no image">
+            </div>
+
+            <!-- abut text cntent -->
+
+            <div class="ordertext">
+
+                <div>
+                    <label for="usr">username:</label>
+                    <input id="usr" type="text" placeholder="enter username">
+                </div><br>
+                <div>
+                    <label for="nmbr">Mobile number:</label>
+                    <input id="nmbr" type="text" placeholder="enter mobile number">
+                </div><br>
+                <div>
+                    <label for="usr">Your Order:</label>
+                    <input id="usr" type="text" placeholder="Order">
+                </div><br>
+                <div>
+                    <label for="usr">E-mail:</label>
+                    <input id="usr" type="email" placeholder="your email">
+                </div><br>
+                <div>
+                    <label for="usr">How much:</label>
+                    <input id="usr" type="text" placeholder="How many">
+                </div><br>
+                <div>
+                    <label for="usr">Address:</label>
+                    <input id="usr" type="text" placeholder="enter username">
+                </div><br>
+
+                <button>ORDER NOW</button>
+
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+
+
+    </section>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0322401458634!2d75.7886687!3d11.2590386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65948af1f7731%3A0xacc5fcd492aa2d4f!2sGazania%20Mezban%20Restaurant!5e0!3m2!1sen!2sin!4v1686199382147!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <section id="icon">
+        <h3>contact us</h3>
+
+        <div class="link">
+
+            <div>
+                <a href="https://in.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><i
+                        class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+
+
+            <div>
+                <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+
+
+            <div>
+                <a href="https://twitter.com/i/flow/login"> <i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+
+
+            <div>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    
+
+
+
+</body>
+
+</html>

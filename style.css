@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(197, 197, 216);
+    
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    margin-left: 100px;
+}
+
+nav .logo{
+    width: 100px;
+    margin-top: 5%;
+    border-radius: 50%;
+
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    text-decoration: dotted;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+}
+
+.heading{
+    margin-right: 8%;
+    margin-left: 50%;
+    font-variant: small-caps;
+    text-align:center;
+}
+
+.heading h2{
+    color:black;
+    font-size: x-large;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+.heading span{
+    color: black;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.aboutcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.abouting img{
+    margin-left: 0%;
+    width: 203%;
+    height: 80%;
+    
+
+    
+}
+
+.abouttext{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    width: 80%;
+   
+}
+
+.ordercontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.ordering img{
+    margin-left: 15%;
+    width: 75%;
+    height: 75%;
+    margin-top: 0;
+    
+
+    
+}
+
+.ordertext{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    width: 80%;
+   
+}
+.headingss{
+    margin-right: 8%;
+    margin-left: 50%;
+    margin-top: 10%;
+    font-variant: small-caps;
+    text-align:center;
+    font-weight: bolder;
+
+}
+button{
+    text-align: center;
+    background-color:lime;
+    margin-left: 30px;
+}
+.link{
+    align-items: center;
+   display: flex;
+   justify-content: center;
+  
+   border: 10%;
+   size:70%;
+   gap: 1rem;
+   font-size: 50px;
+   margin-top: 5%;
+   
+   
+
+
+}
+h3{
+    margin-left: 45%;
+}
+iframe{
+    margin-left: 30%;
+}
+
+
+
+
